@@ -1,7 +1,10 @@
 package com.kanban.api.dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class TaskDTO {
 
+    @NotBlank(message = "Title cannot be blank!")
     private String title;
     private String description;
 
