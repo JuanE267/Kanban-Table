@@ -3,6 +3,7 @@ package com.kanban.api.model;
 import com.kanban.api.enums.TaskStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Builder;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
