@@ -33,6 +33,11 @@ public class KanbanService {
                 .orElseThrow(() -> new TaskNotFoundException(id));
     }
 
+    // GET TASK BY TITLE
+    public List<Task> getTasksByTitle(String title){
+        return repository.findByTitle(title);
+    }
+
     // CREATE TASK
     public Task addTask(Task task) {
         String taskTitle = task.getTitle();

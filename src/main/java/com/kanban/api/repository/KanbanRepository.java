@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface KanbanRepository extends JpaRepository<Task, Long> {
+public interface KanbanRepository extends KanbanRepositoryCustom,JpaRepository<Task, Long> {
 }

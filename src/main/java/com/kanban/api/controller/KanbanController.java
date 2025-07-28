@@ -32,6 +32,10 @@ public class KanbanController {
         return service.getTask(id);
     }
 
+    public List<Task> getTasksByTitle(@PathVariable String title){
+        return service.getTasksByTitle(title);
+    }
+
     @PostMapping
     public Task createTask(@RequestBody @Valid TaskDTO task){
         return service.addTask(mapToEntity(task));
